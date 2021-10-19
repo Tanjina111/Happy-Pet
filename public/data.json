@@ -1,0 +1,44 @@
+[
+    {
+      "name": "Dog",
+      "phone": 111111,
+      "des": "Your most faithful friend can get it's best healthcare here.",
+      "detail": "Our service includes vaccination, spaying, neutering & so other most important parts.",
+      "image": "../images/dog.jpg"
+    },
+    {
+      "name": "Cat",
+      "phone": 121212,
+      "des": "The laziest member of your house can get it's best healthcare here.",
+      "detail": "Our service includes cat vaccination, spaying, neutering & providing best diet chart.",
+      "image": "../images/cat.jpg"
+    },
+    {
+      "name": "Bird",
+      "phone": 131313,
+      "des": "By getting the best healthcare you bird can keep you happy for it's lifetime.",
+      "detail": "Our service includes vaccination, simple to major checkups & perfect food.",
+      "image": "../images/bird.jpg"
+    },
+    {
+      "name": "Fish",
+      "phone": 141414,
+      "des": "Your fishes can keep their active behaviour by taking our service.",
+      "detail": "Our service for your fish includes checkups & the perfect food for fishes.",
+      "image": "../images/fish.jpg"
+    },
+    {
+      "name": "Rabbit",
+      "phone": 151515,
+      "des": "The curious friend needs to stay healthy by taking proper care.",
+      "detail": "Our service includes vaccination, spaying, neutering & so other most important parts.",
+      "image": "../images/rabbit.jpg"
+    },
+    {
+      "name": "Turtle",
+      "phone": 161616,
+      "des": "Those who like this interesting pet can come to us to keep it healthy.",
+      "detail": "Our service includes vaccination, proper neutrition chart & other healthcare informations.",
+      "image": "../images/turtle.jpg"
+    }
+  ]
