@@ -22,6 +22,8 @@ const Header = () => {
             </div>
             <div className='d-flex'>
             <NavLink className='m-4 text-decoration-none text-white navs' to="/">Home</NavLink>
+            <NavLink className='m-4 text-decoration-none text-white navs' to="/vet">Vets</NavLink>
+            <NavLink className='m-4 text-decoration-none text-white navs' to="/about">About</NavLink>
             {user.email && <span className='d-flex align-items-center fw-bolder pe-1' style={{color: 'white'}}> {user.displayName}</span>}
                 {
                     user.email ?
@@ -29,7 +31,6 @@ const Header = () => {
                     :
                     <NavLink className='m-4 text-decoration-none text-white navs' to="/login">Login</NavLink>
                 }
-            {/* <NavLink className='m-4 text-decoration-none text-white navs' to="/login">Log In</NavLink> */}
             </div>
         </div>
         </nav>

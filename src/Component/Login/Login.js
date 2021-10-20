@@ -32,21 +32,19 @@ const Login = () => {
 
     const handleLogIn = e => {
         e.preventDefault();
-        console.log(mail, pass);
         
         
         createUserWithEmailAndPassword(auth, mail, pass)
         .then(result => {
             history.push(redirect_uri);
-          const user = result.user;
-          
-          console.log(user);
+            const user = result.user;
           setError('');
         })
     
         .catch(error => {
           setError(error.message);
         })
+        
         
       }
 
@@ -64,7 +62,7 @@ const Login = () => {
                 <input onBlur={handlePass} type="password" name="password" required placeholder='Enter Password'/>
                 <br />
                 
-                <input onClick={handleLogIn} className='btn btn-regular my-4' type="submit" value="Submit"/>
+                <input onClick={handleLogIn} className='btn btn-primary my-4' type="submit" value="Submit"/>
                 </div>
                 </form>
                 <p className='my-3'>New user? <Link to='/register'><button className='btn btn-warning'>Create Account</button></Link></p>

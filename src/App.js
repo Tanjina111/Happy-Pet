@@ -1,5 +1,4 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Component/Home/Home';
 import About from './Component/About/About';
@@ -12,18 +11,9 @@ import Footer from './Component/Footer/Footer';
 import Vet from './Component/Vet/Vet';
 import Detail from './Component/Detail/Detail';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
-// import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
-
 
 function App() {
-  const [service, setService] = useState([]);
 
-  // Get data
-  useEffect(() => {
-    fetch('./data.json')
-    .then(res => res.json())
-    .then(data => setService(data));
-}, []);
   return (
     <div className="App">
       <AuthProvider>
@@ -31,20 +21,20 @@ function App() {
       <Header></Header>
       <Switch>
         <Route exact path='/'>
-        <Home service= {service}></Home>
+        <Home></Home>
         </Route>
         <Route path='/home'>
         <Home></Home>
         </Route>
-        <PrivateRoute path='/detail'>
-          <Detail service= {service}></Detail>
+        <PrivateRoute path='/detail/:phone'>
+          <Detail></Detail>
         </PrivateRoute>
-        <PrivateRoute path='/about'>
+        <Route path='/about'>
           <About></About>
-          </PrivateRoute>
-        <PrivateRoute path='/vet'>
+          </Route>
+        <Route path='/vet'>
           <Vet></Vet>
-        </PrivateRoute>
+        </Route>
         <Route path='/login'>
         <Login></Login>
         </Route>

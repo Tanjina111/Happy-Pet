@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Happy Pet
 
 This project is on healthcare. It includes pet healthcare service. [Happy Pet](https://github.com/facebook/create-react-app).
 

@@ -3,9 +3,17 @@ import Pets from './pets.png'
 import Chuky from './chuky.jpg'
 import './Home.css'
 import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
-const Home = (props) => {
-    const { service } = props;
+const Home = () => {
+    const [service, setService] = useState([]);
+
+  // Get data
+    useEffect(() => {
+    fetch('./data.json')
+    .then(res => res.json())
+    .then(data => setService(data));
+    }, []);
 
     return (
         <>
