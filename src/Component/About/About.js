@@ -8,7 +8,7 @@ const About = () => {
 
         <div className="card mb-3 container border border-rounded shadow my-3 d-flex justify-content-between">
 
-            {/* Courses Detail */}
+            {/* Service System Detail */}
 
             <div className="row">
                 <img src={Banner} alt="" />
@@ -24,11 +24,15 @@ const About = () => {
                 </div>
             </div>
             </div>
+
+            {/* Pet Food */}
             <div className="col-md-6 py-5 px-1 text-end">
             <p className="card-text">Here you can also get the best food and medicines for your pet. We also provide their toys which suits them and keep them delightful.</p>
             <img src={Food} className="img-fluid rounded" alt="..." />
             </div>
         </div>
+
+        {/* Button Back To Home */}
         <Link  to='/'><button className='btn btn-primary my-3'>Back To Home</button></Link> 
         </div>
         

@@ -7,11 +7,11 @@ const PageError = () => {
         <div>
 
             {/* Not found img */}
-            <img className='img-fluid' src={Errors} alt="" />
+            <img className='img-fluid my-4' src={Errors} alt="" />
 
             {/* Back to home button */}
             <div className='mb-4'>
-            <Link to='/'><button className='btn btn-primary'>Back To Home</button></Link>
+            <Link to='/'><button className='btn btn-primary my-3'>Back To Home</button></Link>
             </div>
         </div>
     );

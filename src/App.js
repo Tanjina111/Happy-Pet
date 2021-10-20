@@ -26,9 +26,12 @@ function App() {
         <Route path='/home'>
         <Home></Home>
         </Route>
+
+        {/* Private Route */}
         <PrivateRoute path='/detail/:phone'>
           <Detail></Detail>
         </PrivateRoute>
+        
         <Route path='/about'>
           <About></About>
           </Route>
@@ -38,9 +41,9 @@ function App() {
         <Route path='/login'>
         <Login></Login>
         </Route>
-        <PrivateRoute path='/register'>
+        <Route path='/register'>
         <Registration></Registration>
-        </PrivateRoute>
+        </Route>
         
         <Route path='*'>
           <PageError></PageError>

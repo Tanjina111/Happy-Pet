@@ -3,7 +3,7 @@ import React from 'react';
 const ShowVet = (props) => {
     const {name, image, phone } = props.data;
     return (
-        // Review display
+        // Display Vets
         <div className="col">
         <div className="card h-100">
             <img src={image} className="card-img-top" alt="" />

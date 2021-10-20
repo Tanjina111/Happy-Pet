@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react';
 const Home = () => {
     const [service, setService] = useState([]);
 
-  // Get data
+  // Get Data
     useEffect(() => {
     fetch('./data.json')
     .then(res => res.json())
@@ -37,9 +37,13 @@ const Home = () => {
         <h6 className='mx-auto'>Check more <Link  to='/about'><button className='btn btn-warning'>About Us</button></Link></h6>
         </div>
         </div>
+
+        {/* Third Part */}
         <div>
             <img className='img-fluid' src={Pets} alt="" />
         </div>
+
+        {/* Fourth Part */}
         <div className='card d-flex shadow rounded m-5'>
             <div className='row'>
             <div className='col-md-5 p-3'>
